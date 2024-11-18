@@ -29,7 +29,7 @@ function getData() {
       // nell'array, se così invoco la funzione drawEmail() che stamperà
       // gli <li> contenenti le email sull'html
       if (arrayEmail.length === 10) {
-        drawEmail(arrayEmail);
+        printEmail(arrayEmail);
         return arrayEmail;
       }
     }).catch((error) => {
@@ -40,7 +40,7 @@ function getData() {
 }
 
 /* Funzione che stampa le 10 email in una lista <li> nell'html */
-function drawEmail(arrayEmail) {
+function printEmail(arrayEmail) {
   // Recupero l'elemento della pagina html
   const elementUl = document.querySelector('ul');
   // Lo svuoto per evitare che le mail si appendano ad altre email esistenti

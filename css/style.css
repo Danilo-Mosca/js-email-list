@@ -53,13 +53,19 @@ li {
     width: 100%;
     display: block;
     font-size: 1.1rem;
-    /* max-width: 100%; */
+    max-width: 100%;
 }
-
+/* Creo la transizione all'hover del mouse sulle liste <li> */
 li:hover {
     transform: scale(1.08, 1);
     transition: all 1s;
-    opacity: 0.9;
+    opacity: 1;
+}
+
+/* Creo la transizione anche quando il mouse si sposta dalle liste <li> */
+li:not(:hover) {
+    transition: all 1s;
+    opacity: 1;
 }
 
 #email-1 {
@@ -116,4 +122,9 @@ li:hover {
     transform: scale(1.1, 1.1);
     transition: all 1s;
     opacity: 0.9;
+}
+
+.container {
+    -webkit-transition: opacity .4s ease .4s;
+        transition: opacity .4s ease .4s;
 }
