@@ -5,9 +5,13 @@ console.clear();
 https://flynn.boolean.careers/exercises/api/random/mail
 */
 
+// Recupero l'elemento pulsante dalla pagina html
+const btnGenerator = document.getElementById('btnGenerator');
+// Creo un ascoltatore di eventi per il pulsante
+btnGenerator.addEventListener('click', getData);
 // Creo la variabile arrayEmail e la popolo delle 10 email casuali
-const arrayEmail = getData();
-console.log(arrayEmail);
+
+
 
 /* Funzione che restituirà i dati contenente le 10 email casuali in un array */
 function getData() {
@@ -26,6 +30,7 @@ function getData() {
       // gli <li> contenenti le email sull'html
       if (arrayEmail.length === 10) {
         drawEmail(arrayEmail);
+        return arrayEmail;
       }
     }).catch((error) => {
       // Se si verifica un errore lo mostro in console.log
@@ -38,9 +43,11 @@ function getData() {
 function drawEmail(arrayEmail) {
   // Recupero l'elemento della pagina html
   const elementUl = document.querySelector('ul');
-
+  // Lo svuoto per evitare che le mail si appendano ad altre email esistenti
+  elementUl.innerHTML = '';
   // Creo il nodo elemento di tipo <li>
   let elementLi = document.createElement('li');
+  elementLi.value = '';
   arrayEmail.forEach((element) => {
     elementLi.innerHTML += `<li> ${element} </li>`
     elementUl.appendChild(elementLi);
