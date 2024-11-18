@@ -1,0 +1,33 @@
+/* Palette colori */
+:root {
+    --color-mail: rgb(61, 19, 19);;
+}
+
+/* Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+ul {
+    color: var(--color-mail);
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+i.fa-regular.fa-envelope:hover{
+    cursor: pointer;
+    color: red;
+}

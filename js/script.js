@@ -49,7 +49,7 @@ function drawEmail(arrayEmail) {
   let elementLi = document.createElement('li');
   elementLi.value = '';
   arrayEmail.forEach((element) => {
-    elementLi.innerHTML += `<li> ${element} </li>`
+    elementLi.innerHTML += `<li class="my-3"> <i class="fa-regular fa-envelope"></i> ${element} </li>`
     elementUl.appendChild(elementLi);
   });
 }
