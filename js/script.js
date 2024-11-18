@@ -48,8 +48,10 @@ function drawEmail(arrayEmail) {
   // Creo il nodo elemento di tipo <li>
   let elementLi = document.createElement('li');
   elementLi.value = '';
-  arrayEmail.forEach((element) => {
-    elementLi.innerHTML += `<li class="my-3"> <i class="fa-regular fa-envelope"></i> ${element} </li>`
+  arrayEmail.forEach((element, index) => {
+    console.log(index);
+    
+    elementLi.innerHTML += `<li class="li-email my-3 p-3" id="email-${index + 1}"> <i class="fa-regular fa-envelope"></i> ${element} </li>`
     elementUl.appendChild(elementLi);
   });
 }

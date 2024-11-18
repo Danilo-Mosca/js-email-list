@@ -1,6 +1,17 @@
 /* Palette colori */
 :root {
-    --color-mail: rgb(61, 19, 19);;
+    --color-mail: rgb(61, 19, 19);
+    --first-li: #780000;
+    --second-li: #c1121f;
+    --third-li: #fdf0d5;
+    --fourth-li: #003049;
+    --fifth-li: #669bbc;
+    --sixth-li: #8ecae6;
+    --seventh-li: #219ebc;
+    --eighth-li: #023047;
+    --ninth-li: #ffb703;
+    --tenth-li: #fb8500;
+
 }
 
 /* Reset  */
@@ -27,7 +38,76 @@ h1 {
     text-align: center;
 }
 
-i.fa-regular.fa-envelope:hover{
+i.fa-regular.fa-envelope:hover {
     cursor: pointer;
     color: red;
+}
+
+li {
+    width: 100%;
+    display: block;
+    font-size: 1.1rem;
+    /* max-width: 100%; */
+}
+
+li:hover {
+    transform: scale(1.08, 1);
+    transition: all 1s;
+    opacity: 0.9;
+}
+
+#email-1 {
+    background-color: #780000;
+    color: white;
+}
+
+#email-2 {
+    background-color: var(--second-li);
+    color: white;
+}
+
+#email-3 {
+    background-color: var(--third-li);
+    color: balck;
+}
+
+#email-4 {
+    background-color: var(--fourth-li);
+    color: white;
+}
+
+#email-5 {
+    background-color: var(--fifth-li);
+    color: black;
+}
+
+#email-6 {
+    background-color: var(--sixth-li);
+    color: black;
+}
+
+#email-7 {
+    background-color: var(--seventh-li);
+    color: black;
+}
+
+#email-8 {
+    background-color: var(--eighth-li);
+    color: white;
+}
+
+#email-9 {
+    background-color: var(--ninth-li);
+    color: black;
+}
+
+#email-10 {
+    background-color: var(--tenth-li);
+    color: black;
+}
+
+.fa-regular.fa-envelope:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s;
+    opacity: 0.9;
 }
