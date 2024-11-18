@@ -25,6 +25,11 @@
     border: 1px solid red;
 }
 
+body {
+    background: rgb(247, 127, 4);
+        background: linear-gradient(90deg, rgba(247, 127, 4, 1) 0%, rgba(255, 183, 3, 1) 35%, rgba(253, 240, 213, 1) 100%);
+}
+
 ul {
     color: var(--color-mail);
 }
@@ -36,6 +41,7 @@ li {
 
 h1 {
     text-align: center;
+    color: rgb(70, 65, 65);
 }
 
 i.fa-regular.fa-envelope:hover {
