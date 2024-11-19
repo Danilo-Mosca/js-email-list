@@ -128,3 +128,21 @@ li:not(:hover) {
     -webkit-transition: opacity .4s ease .4s;
         transition: opacity .4s ease .4s;
 }
+
+/* Creo la finestra di caricamento che verrà visualizzata quando
+schiacchierò il pulsante e si toglierà quando avrà caricato tutte le email
+oppure quando ci sarà un errore */
+#loader {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+}
